@@ -8,7 +8,7 @@ $isNameLongEnough = strlen ($name) > 3;
 
 $isDotPresent = strpos ( $mail , ".");
 $isAtPresent = strpos ( $mail , "@");
-$isValidMail = ($isDotPresent && $isAtPresent);
+$isValidMail = (($isDotPresent !== false) && ($isAtPresent !== false);
 
 $IsAgeNumber = is_numeric ($age)
 
